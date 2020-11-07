@@ -18,9 +18,18 @@ export class AuthService {
     this.user$ = afAuth.authState;
   }
 
-  login() {
-    const returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/home';
+  loginEmployee() {
+    const returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/inicio-empleado';
     localStorage.setItem('returnUrl', returnUrl);
+    sessionStorage.setItem('option', 'employee');
+
+    this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
+  }
+
+  loginEmployer() {
+    const returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/inicio-empleador';
+    localStorage.setItem('returnUrl', returnUrl);
+    sessionStorage.setItem('option', 'employer');
 
     this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
   }

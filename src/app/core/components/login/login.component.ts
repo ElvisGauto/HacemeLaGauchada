@@ -15,8 +15,12 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  loginWithGoogle() {
-    this._authService.login();
+  loginWithGoogle(type) {
+    if (type === 'employee') {
+      this._authService.loginEmployee();
+    } else if (type === 'employer') {
+      this._authService.loginEmployer();
+    }
   }
 
 }

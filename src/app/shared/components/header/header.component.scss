@@ -1,0 +1,18 @@
+.hlg-header {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__logo {
+            
+        }
+        &__redirect {
+            &-button {
+
+            }
+        }
+    }
+}

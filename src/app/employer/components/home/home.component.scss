@@ -1,0 +1,58 @@
+.hlg-home-employer {
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        &__container {
+            width: 90%;
+        }
+    }
+    &__title {
+
+    }
+    &__content {
+        &__my-offers {
+            width: 100%;
+            height: 300px;
+            border: 1px solid;        
+        }
+        &__operate-offers {
+
+        }
+    }
+    &__offers {
+        &-result {
+
+        }
+        &-list {
+            &--nav-cont {
+
+            }
+            &--ul-cont  {
+
+            }
+            &--list-cont {
+
+            }
+        }
+    }
+    &__offers-filter-cont {
+        &__input-filter {
+
+        }
+    }
+    &__operate {
+        &-offers-cont {
+
+        }
+        &-buttons {
+
+        }
+    }
+    &__button-cont {
+        &__button  {
+
+        }
+    }
+}
